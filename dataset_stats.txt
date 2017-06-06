@@ -1,6 +1,0 @@
-Dataset Stats
-Roughly the number of unique words: 136602
-Number of scenes: 568
-Average number of sentences in each scene: 278.6021126760563
-Number of lines: 158814
-Average number of words in each line: 11.621708413615927
