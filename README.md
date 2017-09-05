@@ -1,4 +1,4 @@
-# dlnd_tv_script_generation
+# dlnd_tv_script_generation 
 
 Use of RNNs to build a TV script using 'Simpsons by the data' dataset from Kaggle. 
 
@@ -8,9 +8,9 @@ no success. It can be found some scripts for different characters -still nonsens
 
 Two jupyter notebooks can be found:
 
-** simpsons_dataset_preparation.ipynb --> the additional operations to prepare a txt with the whole The Simpsons Dataset from Kaggle. 
+* simpsons_dataset_preparation.ipynb --> the additional operations to prepare a txt with the whole The Simpsons Dataset from Kaggle. 
 
-** dlnd_tv_script_generation.ipynb --> the NN model and training
+* dlnd_tv_script_generation.ipynb --> the NN model and training
 
 NN model: 
 
@@ -33,14 +33,6 @@ You can see your instance in the list is running and has ID XXXXXXXXXXXXXXXXXXXX
 ### Environments
 
 FloydHub comes with a bunch of popular deep learning frameworks such as TensorFlow, Keras, Caffe, Torch, etc. You can specify which framework you want to use by setting the environment. Here's the list of environments FloydHub has available, with more to come!
-
-### Datasets 
-
-With FloydHub, you are uploading data from your machine to their remote instance. It's a really bad idea to upload large datasets like CIFAR along with your scripts. Instead, you should always download the data on the FloydHub instance instead of uploading it from your machine.
-
-> floyd run "python train.py" --data diSgciLH4WA7HpcHNasP9j
-
-Here, diSgciLH4WA7HpcHNasP9j is the ID for this dataset, you can get IDs for other data sets from the list linked above. The dataset will be available at /input. So, the CIFAR10 data will be in /input/CIFAR10.
 
 ### Output
 Often you'll be writing data out, things like TensorFlow checkpoints. Or, updated notebooks. To get these files, you can get links to the data with:
