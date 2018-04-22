@@ -36,21 +36,30 @@ Despite we use the whole 'Simpsons by the Data' dataset, still, the script is no
 * [Test](http://localhost:8888/notebooks/dlnd_language_translation.ipynb)
 * [Demo](https://www.floydhub.com/nvmoyar/projects/simpsons-script)
 
-## Install and Requirements
+#### Requirements
 
 FloydHub is a platform for training and deploying deep learning models in the cloud. It removes the hassle of launching your own cloud instances and configuring the environment. For example, FloydHub will automatically set up an AWS instance with TensorFlow, the entire Python data science toolkit, and a GPU. Then you can run your scripts or Jupyter notebooks on the instance. 
 For this project: 
 
 > floyd run --mode jupyter --gpu --env tensorflow-1.0
 
-You can see your instance on the list is running and has ID XXXXXXXXXXXXXXXXXXXXXX. So you can stop this instance with floyd stop XXXXXXXXXXXXXXXXXXXXXX. Also, if you want more information about that instance, use floyd info XXXXXXXXXXXXXXXXXXXXXX
+You can see your instance on the list is running and has ID XXXXXXXXXXXXXXXXXXXXXX. So you can stop this instance with Floyd stop XXXXXXXXXXXXXXXXXXXXXX. Also, if you want more information about that instance, use Floyd info XXXXXXXXXXXXXXXXXXXXXX
 
-### Environments
+#### Environments
 
 FloydHub comes with a bunch of popular deep learning frameworks such as TensorFlow, Keras, Caffe, Torch, etc. You can specify which framework you want to use by setting the environment. Here's the list of environments FloydHub has available, with more to come!
 
-### Output
-Often you'll be writing data out, things like TensorFlow checkpoints. Or, updated notebooks. To get these files, you can get links to the data with:
+#### Datasets 
+
+Already included in this project in the datasets folder: [The Simpsons by the Data](https://www.kaggle.com/wcukierski/the-simpsons-by-the-data)
+
+### Usage 
+
+floyd run --gpu --env tensorflow-1.1 --mode jupyter
+
+#### Output
+
+Often you'll be writing data out, things like TensorFlow checkpoints, updated notebooks, trained models and HDF5 files. You will find all these files, you can get links to the data with:
 
 > floyd output run_ID
 
