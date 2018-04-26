@@ -11,12 +11,12 @@
 
 Recurrent Neural Networks are proven a good approach to deal with sequential data like time series or meaningful text. In this project, a new script for the Simpsons TV series is created from the 'Simpsons by the data' dataset from Kaggle. 
 
-Initially, for this Udacity's project, only the graph built was trained only using all scenes at Moe's Tavern. However, for experimenting purposes, the whole dataset has been used for training in order to get a more sensical script. It can be found some scripts for different characters -still nonsensical- saved as HTML files and different epochs. 
+Initially, for this Udacity's project, only the graph built was trained only using all scenes at Moe's Tavern. However, for experimenting purposes, the whole dataset has been used for training in order to get a more sensical script. 
 
 Unlike the Udacity's repo, in this project we find two Jupiter notebooks: 
 
-* simpsons_dataset_preparation.ipynb --> the additional operations to prepare a text with the whole The Simpsons Dataset from Kaggle. 
-* dlnd_tv_script_generation.ipynb --> the model, the training and the predicted script. 
+* [Data preparation](simpsons_dataset_preparation.ipynb) --> the additional operations to prepare a text with the whole The Simpsons Dataset from Kaggle. 
+* [Model + Training](dlnd_tv_script_generation.ipynb) --> the model, the training and the predicted script. 
 
 We could visualize the input words passed as one-hot encoded vectors, and on this case, this might work if we are dealing with a small dataset, however, with a larger corpus, the dimensionality will be so huge that the computation could be unbearable. To deal with this high dimensionality problem, we would need a better vector representation for our words, since words that could be used in the same context should appear closer than unrelated words. This weight matrix is usually called the embedding matrix or embedding look-up table and Tensorflow provides a convenient function which does this lookup to get the embedding tensors. In this case, we build lookup tables for later use when creating the word embeddings. 
 
